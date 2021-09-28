@@ -1,0 +1,58 @@
+/**
+ * The admin stylesheet for Jinx.
+ *
+ * @package Jinx
+ * @author  LaStudio
+ * @link
+ */
+/*------------------------------------------------------------------
+[Table of contents]
+  1. CSS General
+-------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+	1. CSS General
+---------------------------------------------------------------*/
+.control-section[id*="sub-accordion-section-jinx"] .customize-control,
+ul#sub-accordion-section-colors .customize-control {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.control-section[id*="sub-accordion-section-jinx"] .customize-control .customize-control-title,
+ul#sub-accordion-section-colors .customize-control .customize-control-title {
+    flex: 1 1 0;
+    margin-bottom: 0;
+    font-weight: 600;
+    order: 0;
+}
+.lakitcustomizer-inline-control{
+    width: 100%;
+}
+.control-section[id*="sub-accordion-section-jinx"] .customize-control input:not([type$="box"]),
+.control-section[id*="sub-accordion-section-jinx"] .customize-control select{
+    width: auto;
+    min-width: 100px;
+    order: 1;
+    height: 39px;
+    border-color: #dddddd;
+}
+
+.control-section[id*="sub-accordion-section-jinx"] .customize-control .customize-control-description{
+    width: 100%;
+    order: 2;
+}
+.control-section[id*="sub-accordion-section-jinx"] .customize-control .customize-control-notifications-container{
+    order: -1;
+}
+.customize-control .attachment-media-view {
+    width: 100%;
+}
+.customize-control .attachment-media-view .thumbnail-image {
+    max-width: 200px;
+}
+.column-lakit_post_thumbs img {
+    max-width: 80px;
+    height: auto;
+}
