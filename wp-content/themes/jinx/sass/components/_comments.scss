@@ -331,6 +331,14 @@ p.no-comments{
 	margin-top: 1em;
 }
 
+.comment-list h3#reply-title {
+	font-size: var(--theme-h5-font-size);
+}
+.comment-list .comment-respond {
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
 @media(max-width: 992px){
 	.comment-list>li .comment-container .comment-body {
 		margin-top: 10px;

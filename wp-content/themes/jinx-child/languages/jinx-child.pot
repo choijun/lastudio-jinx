@@ -15,7 +15,7 @@ msgstr ""
 "X-Generator: Loco https://localise.biz/"
 
 #. Description of the theme
-msgid "Jinx - Cake Shop WooCommerce Theme"
+msgid "Jinx - Pet Shop & Veterinary WooCommerce Theme"
 msgstr ""
 
 #. Name of the theme

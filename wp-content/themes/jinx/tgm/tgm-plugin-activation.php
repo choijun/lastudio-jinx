@@ -45,7 +45,7 @@ if(!function_exists('jinx_register_required_plugins')){
         $plugins[] = array(
             'name'     				=> esc_html_x('LA-Studio Element Kit for Elementor', 'admin-view', 'jinx'),
             'slug'     				=> 'lastudio-element-kit',
-            'source'   				=> 'https://la-studioweb.com/file-resouces/shared/plugins/lastudio-element-kit_v1.1.0.zip',
+            'source'   				=> 'https://la-studioweb.com/file-resouces/shared/plugins/lastudio-element-kit_v1.1.2.zip',
             'required' 				=> true,
             'version' 				=> '1.1.0'
         );
@@ -53,7 +53,7 @@ if(!function_exists('jinx_register_required_plugins')){
 		$plugins[] = array(
 			'name'     				=> esc_html_x('WooCommerce', 'admin-view', 'jinx'),
 			'slug'     				=> 'woocommerce',
-			'version'				=> '5.6.0',
+			'version'				=> '5.7.1',
 			'required' 				=> false
 		);
         

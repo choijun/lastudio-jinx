@@ -76,7 +76,7 @@ Domain Path:    /languages/
   --theme-h4-font-size: 24px;
   --theme-h5-font-size: 22px;
   --theme-h6-font-size: 20px;
-  --theme-body-font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Poppins, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --theme-body-font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", Poppins, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --theme-heading-font-family: "Raleway", sans-serif;
   --theme-three-font-family: "Raleway", sans-serif;
   --theme-heading-font-weight: 600;
@@ -2492,6 +2492,10 @@ span.sticky-post {
   color: var(--theme-primary-color);
 }
 
+.widget_search input#searchsubmit {
+  margin-top: 15px;
+}
+
 /*------------------------------------*
 	$PAGINATION
 *------------------------------------*/
@@ -3136,6 +3140,15 @@ li.pingback + li.comment-container {
 
 p.no-comments {
   margin-top: 1em;
+}
+
+.comment-list h3#reply-title {
+  font-size: var(--theme-h5-font-size);
+}
+
+.comment-list .comment-respond {
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
 
 @media (max-width: 992px) {
@@ -4658,22 +4671,50 @@ ol.wp-block-latest-comments,
   margin-right: auto;
 }
 
+body .blocks-gallery-grid .blocks-gallery-image figcaption,
+body .blocks-gallery-grid .blocks-gallery-item figcaption,
+body .wp-block-gallery .blocks-gallery-image figcaption,
+body .wp-block-gallery .blocks-gallery-item figcaption {
+  padding: 0.7em;
+  line-height: normal;
+}
+
+body .wp-block-gallery.columns-7 .blocks-gallery-item figcaption,
+body .wp-block-gallery.columns-8 .blocks-gallery-item figcaption {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  display: block;
+  display: -webkit-box;
+  line-height: 1.6;
+  font-size: 12px;
+  max-height: 5.8em;
+}
+
 @media (min-width: 960px) {
-  .alignwide {
+  .site-no-sidebar .alignwide {
     width: auto;
     max-width: 1170px;
   }
-
-  .alignfull:not(.wp-block-pullquote) {
+  .site-no-sidebar .alignfull:not(.wp-block-pullquote) {
     margin-left: calc(-1*(100vw - 100% - var(--scrollbar-width-o))/2);
     margin-right: calc(-1*(100vw - 100% - var(--scrollbar-width-o))/2);
     width: auto;
     max-width: calc(100vw - var(--scrollbar-width-o));
   }
-
+  .site-no-sidebar:not(.elementor-page):not(.woocommerce-page) .comments-area,
+.site-no-sidebar:not(.elementor-page):not(.woocommerce-page) .page-content,
+.site-no-sidebar:not(.elementor-page):not(.woocommerce-page) .site-content--default > .post-tags,
+.site-no-sidebar:not(.elementor-page):not(.woocommerce-page) .site-content--default > .post-tags {
+    width: 930px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .site-no-sidebar:not(.elementor-page):not(.woocommerce-page) .alignwide {
-    margin-left: -185px;
-    margin-right: -185px;
+    margin-left: -120px;
+    margin-right: -120px;
   }
 }
 .elementor-lakit-post-content .elementor-widget-container > h3 {
@@ -4688,7 +4729,7 @@ ol.wp-block-latest-comments,
 }
 
 .site-header--default .site-branding img {
-  width: 102px;
+  width: 160px;
 }
 
 @media (min-width: 1025px) {
@@ -4825,6 +4866,11 @@ ol.wp-block-latest-comments,
     max-height: calc(100vh - 100px - 46px);
   }
 }
+.site-content--default .post_item-thumbnail-figure img {
+  width: auto;
+  margin-left: 0;
+}
+
 @media (min-width: 1280px) {
   body {
     --theme-sidebar-space: 60px ;
@@ -5445,5 +5491,3 @@ form.search-form .search-button:hover {
 .lakit-nav-wrap:not(.lakit-active--mbmenu) .lakit-nav__item:hover > .menu-item-link.menu-item-link-top .lakit-nav-link-text:after, .lakit-nav-wrap:not(.lakit-active--mbmenu) .current-menu-item > .menu-item-link.menu-item-link-top .lakit-nav-link-text:after {
   width: 100%;
 }
-
-/*# sourceMappingURL=style.css.map */

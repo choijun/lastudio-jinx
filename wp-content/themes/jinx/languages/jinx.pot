@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Jinx\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-14 12:05+0000\n"
+"POT-Creation-Date: 2021-09-29 20:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco https://localise.biz/\n"
-"X-Loco-Version: 2.5.2; wp-5.7.2\n"
+"X-Loco-Version: 2.5.4; wp-5.8.1\n"
 "X-Domain: jinx"
 
 #: framework/woocommerce/woocommerce-wishlist.php:95
@@ -57,6 +57,14 @@ msgstr ""
 msgid "[icon]Spend [amount] to get Free Shipping"
 msgstr ""
 
+#: functions.php:698 functions.php:716
+msgid "Accent"
+msgstr ""
+
+#: framework/configs/options.php:98
+msgid "Accent color"
+msgstr ""
+
 #: framework/woocommerce/woocommerce-compare.php:295
 msgid "Add to cart"
 msgstr ""
@@ -69,11 +77,6 @@ msgstr ""
 #: framework/woocommerce/woocommerce-helpers.php:414
 msgctxt "admin-view"
 msgid "Badge Text"
-msgstr ""
-
-#: tgm/tgm-plugin-activation.php:61
-msgctxt "admin-view"
-msgid "Jinx Package Demo Data"
 msgstr ""
 
 #: tgm/tgm-plugin-activation.php:77
@@ -116,6 +119,11 @@ msgctxt "admin-view"
 msgid "Extra CSS class for badge"
 msgstr ""
 
+#: tgm/tgm-plugin-activation.php:61
+msgctxt "admin-view"
+msgid "Jinx Package Demo Data"
+msgstr ""
+
 #: tgm/tgm-plugin-activation.php:46
 msgctxt "admin-view"
 msgid "LA-Studio Element Kit for Elementor"
@@ -151,7 +159,7 @@ msgctxt "admin-view"
 msgid "Remove Existing Data"
 msgstr ""
 
-#: framework/woocommerce/woocommerce-config.php:159
+#: framework/woocommerce/woocommerce-config.php:161
 msgctxt "admin-view"
 msgid "Sidebar - Filter"
 msgstr ""
@@ -195,7 +203,7 @@ msgstr ""
 msgid "Archives"
 msgstr ""
 
-#: framework/classes/class-admin.php:43
+#: framework/classes/class-admin.php:44
 msgid "Are you sure?"
 msgstr ""
 
@@ -207,20 +215,12 @@ msgstr ""
 msgid "Awaiting product image"
 msgstr ""
 
-#. Name of the theme
-msgid "Jinx"
+#: framework/configs/options.php:835
+msgid "Body Background Color"
 msgstr ""
 
-#. Description of the theme
-msgid "Jinx - Multipurpose Creative Theme"
-msgstr ""
-
-#. Name of the template
-msgid "Jinx Full Width"
-msgstr ""
-
-#. Name of the template
-msgid "Jinx No Sidebar"
+#: framework/configs/options.php:202
+msgid "Body text"
 msgstr ""
 
 #: framework/classes/breadcrumbs.php:297
@@ -228,16 +228,55 @@ msgctxt "breadcrumbs aria label"
 msgid "Breadcrumbs"
 msgstr ""
 
-#: framework/woocommerce/woocommerce-config.php:719
+#: framework/configs/options.php:892
+msgid "Center"
+msgstr ""
+
+#: framework/configs/options.php:40 framework/configs/options.php:52
+msgid "Change Logo"
+msgstr ""
+
+#: framework/configs/options.php:268 framework/configs/options.php:357
+#: framework/configs/options.php:446 framework/configs/options.php:535
+#: framework/configs/options.php:624 framework/configs/options.php:713
+#: framework/configs/options.php:802
+msgid "Character Set"
+msgstr ""
+
+#: framework/woocommerce/woocommerce-config.php:721
 msgid "Clear All Filter"
+msgstr ""
+
+#: framework/configs/options.php:836
+msgid "Color Scheme"
 msgstr ""
 
 #: comments.php:72
 msgid "Comments are closed."
 msgstr ""
 
-#: framework/classes/class-admin.php:41
+#: framework/configs/options.php:196
+msgid "Configure typography settings"
+msgstr ""
+
+#: framework/classes/class-admin.php:42
 msgid "Create"
+msgstr ""
+
+#: framework/configs/options.php:84
+msgid "Custom"
+msgstr ""
+
+#: framework/configs/options.php:89
+msgid "Custom page preloader image"
+msgstr ""
+
+#: framework/configs/options.php:877
+msgid "Cyrillic"
+msgstr ""
+
+#: framework/configs/options.php:875
+msgid "Cyrillic Extended"
 msgstr ""
 
 #: framework/classes/breadcrumbs.php:950 framework/classes/breadcrumbs.php:1382
@@ -249,11 +288,11 @@ msgstr ""
 msgid "Default"
 msgstr ""
 
-#: functions.php:616
+#: functions.php:611
 msgid "Default Sidebar"
 msgstr ""
 
-#: framework/classes/class-admin.php:44
+#: framework/classes/class-admin.php:45
 msgid "Delete"
 msgstr ""
 
@@ -289,12 +328,44 @@ msgstr ""
 msgid "Estimate Shipping"
 msgstr ""
 
+#: framework/configs/options.php:19
+msgid "Favicon"
+msgstr ""
+
 #: partials/default/content.php:36
 msgid "Featured"
 msgstr ""
 
-#: framework/woocommerce/woocommerce-config.php:690
+#: framework/woocommerce/woocommerce-config.php:692
 msgid "Filters"
+msgstr ""
+
+#: framework/configs/options.php:208 framework/configs/options.php:293
+#: framework/configs/options.php:382 framework/configs/options.php:471
+#: framework/configs/options.php:560 framework/configs/options.php:649
+#: framework/configs/options.php:738
+msgid "Font Family"
+msgstr ""
+
+#: framework/configs/options.php:231 framework/configs/options.php:316
+#: framework/configs/options.php:405 framework/configs/options.php:494
+#: framework/configs/options.php:583 framework/configs/options.php:672
+#: framework/configs/options.php:761
+msgid "Font Size, px"
+msgstr ""
+
+#: framework/configs/options.php:215 framework/configs/options.php:300
+#: framework/configs/options.php:389 framework/configs/options.php:478
+#: framework/configs/options.php:567 framework/configs/options.php:656
+#: framework/configs/options.php:745
+msgid "Font Style"
+msgstr ""
+
+#: framework/configs/options.php:223 framework/configs/options.php:308
+#: framework/configs/options.php:397 framework/configs/options.php:486
+#: framework/configs/options.php:575 framework/configs/options.php:664
+#: framework/configs/options.php:753
+msgid "Font Weight"
 msgstr ""
 
 #: partials/404.php:17 partials/404.php:21
@@ -309,35 +380,35 @@ msgid ""
 "or is temporarily unavailable."
 msgstr ""
 
-#: framework/woocommerce/woocommerce-config.php:368
-#: framework/woocommerce/woocommerce-config.php:371
-#: framework/woocommerce/woocommerce-config.php:377
+#: framework/woocommerce/woocommerce-config.php:370
+#: framework/woocommerce/woocommerce-config.php:373
+#: framework/woocommerce/woocommerce-config.php:379
 msgctxt "front-view"
 msgid "Add to compare"
 msgstr ""
 
-#: framework/woocommerce/woocommerce-config.php:410
+#: framework/woocommerce/woocommerce-config.php:412
 msgctxt "front-view"
 msgid "Add to Wishlist"
 msgstr ""
 
-#: framework/woocommerce/woocommerce-config.php:437
-#: framework/woocommerce/woocommerce-config.php:460
+#: framework/woocommerce/woocommerce-config.php:439
+#: framework/woocommerce/woocommerce-config.php:462
 msgctxt "front-view"
 msgid "Add to wishlist"
 msgstr ""
 
-#: functions.php:504 functions.php:517
+#: functions.php:498 functions.php:511
 msgctxt "front-view"
 msgid "An error occurred ,Please try again !"
 msgstr ""
 
-#: functions.php:509 functions.php:514
+#: functions.php:503 functions.php:508
 msgctxt "front-view"
 msgid "An error occurred, Please try again !"
 msgstr ""
 
-#: functions.php:500
+#: functions.php:494
 msgctxt "front-view"
 msgid "Back"
 msgstr ""
@@ -347,7 +418,7 @@ msgctxt "front-view"
 msgid "Choose an option"
 msgstr ""
 
-#: functions.php:523
+#: functions.php:517
 msgctxt "front-view"
 msgid "Continue Shopping"
 msgstr ""
@@ -357,17 +428,17 @@ msgctxt "front-view"
 msgid "Go to home"
 msgstr ""
 
-#: functions.php:503
+#: functions.php:497
 msgctxt "front-view"
 msgid "has been added to comparison list."
 msgstr ""
 
-#: functions.php:513
+#: functions.php:507
 msgctxt "front-view"
 msgid "has been added to your cart"
 msgstr ""
 
-#: functions.php:508
+#: functions.php:502
 msgctxt "front-view"
 msgid "has been added to your wishlist."
 msgstr ""
@@ -379,7 +450,7 @@ msgid ""
 "searching can help."
 msgstr ""
 
-#: functions.php:518
+#: functions.php:512
 msgctxt "front-view"
 msgid "It seems we can’t find what you’re looking for, please try again !"
 msgstr ""
@@ -389,22 +460,22 @@ msgctxt "front-view"
 msgid "Next"
 msgstr ""
 
-#: functions.php:522
+#: functions.php:516
 msgctxt "front-view"
 msgid "Please enter Comment !"
 msgstr ""
 
-#: functions.php:520
+#: functions.php:514
 msgctxt "front-view"
 msgid "Please enter Email Address !"
 msgstr ""
 
-#: functions.php:519
+#: functions.php:513
 msgctxt "front-view"
 msgid "Please enter Name !"
 msgstr ""
 
-#: functions.php:521
+#: functions.php:515
 msgctxt "front-view"
 msgid "Please select a rating !"
 msgstr ""
@@ -424,8 +495,8 @@ msgctxt "front-view"
 msgid "Product Info"
 msgstr ""
 
-#: framework/woocommerce/woocommerce-config.php:340
-#: framework/woocommerce/woocommerce-config.php:341
+#: framework/woocommerce/woocommerce-config.php:342
+#: framework/woocommerce/woocommerce-config.php:343
 msgctxt "front-view"
 msgid "Quick View"
 msgstr ""
@@ -440,12 +511,12 @@ msgctxt "front-view"
 msgid "Search for:"
 msgstr ""
 
-#: functions.php:526
+#: functions.php:520
 msgctxt "front-view"
 msgid "Show Less"
 msgstr ""
 
-#: functions.php:525
+#: functions.php:519
 msgctxt "front-view"
 msgid "Show More +"
 msgstr ""
@@ -455,40 +526,117 @@ msgctxt "front-view"
 msgid "Sort by"
 msgstr ""
 
-#: functions.php:512
+#: functions.php:506
 msgctxt "front-view"
 msgid "View Cart"
 msgstr ""
 
-#: functions.php:502
+#: functions.php:496
 msgctxt "front-view"
 msgid "View List Compare"
 msgstr ""
 
-#: functions.php:507
+#: functions.php:501
 msgctxt "front-view"
 msgid "View List Wishlist"
 msgstr ""
 
-#: framework/woocommerce/woocommerce-config.php:405
-#: framework/woocommerce/woocommerce-config.php:432
-#: framework/woocommerce/woocommerce-config.php:455
+#: functions.php:521
+msgctxt "front-view"
+msgid "View More"
+msgstr ""
+
+#: framework/woocommerce/woocommerce-config.php:407
+#: framework/woocommerce/woocommerce-config.php:434
+#: framework/woocommerce/woocommerce-config.php:457
 msgctxt "front-view"
 msgid "View Wishlist"
 msgstr ""
 
-#: functions.php:524
+#: functions.php:518
 msgctxt "front-view"
 msgid ""
 "We are sorry, but this feature is available only if cookies are enabled on "
 "your browser"
 msgstr ""
 
-#: framework/woocommerce/woocommerce-config.php:696
+#: framework/configs/options.php:13
+msgid "General Site settings"
+msgstr ""
+
+#: framework/configs/options.php:872
+msgid "Greek"
+msgstr ""
+
+#: framework/configs/options.php:873
+msgid "Greek Extended"
+msgstr ""
+
+#: framework/third/lastudio-kit.php:127
+msgid "Grid 1"
+msgstr ""
+
+#: framework/third/lastudio-kit.php:128
+msgid "Grid 2"
+msgstr ""
+
+#: framework/third/lastudio-kit.php:129
+msgid "Grid 3"
+msgstr ""
+
+#: framework/woocommerce/woocommerce-config.php:698
 msgid "Grid view"
 msgstr ""
 
-#: framework/classes/class-admin.php:39
+#: framework/configs/options.php:146
+msgid "H1 color"
+msgstr ""
+
+#: framework/configs/options.php:287
+msgid "H1 Heading"
+msgstr ""
+
+#: framework/configs/options.php:154
+msgid "H2 color"
+msgstr ""
+
+#: framework/configs/options.php:376
+msgid "H2 Heading"
+msgstr ""
+
+#: framework/configs/options.php:162
+msgid "H3 color"
+msgstr ""
+
+#: framework/configs/options.php:465
+msgid "H3 Heading"
+msgstr ""
+
+#: framework/configs/options.php:170
+msgid "H4 color"
+msgstr ""
+
+#: framework/configs/options.php:554
+msgid "H4 Heading"
+msgstr ""
+
+#: framework/configs/options.php:178
+msgid "H5 color"
+msgstr ""
+
+#: framework/configs/options.php:643
+msgid "H5 Heading"
+msgstr ""
+
+#: framework/configs/options.php:186
+msgid "H6 color"
+msgstr ""
+
+#: framework/configs/options.php:732
+msgid "H6 Heading"
+msgstr ""
+
+#: framework/classes/class-admin.php:40
 msgid "Here you can create new widget areas for use in the Sidebar module"
 msgstr ""
 
@@ -521,12 +669,11 @@ msgstr ""
 msgid "In stock"
 msgstr ""
 
-#: functions.php:631
-msgctxt "Inter font: on or off"
-msgid "on"
+#: framework/configs/options.php:856 framework/configs/options.php:891
+msgid "Inherit"
 msgstr ""
 
-#: functions.php:556
+#: functions.php:551
 msgid "Internal error. Please, try again later"
 msgstr ""
 
@@ -544,11 +691,81 @@ msgstr ""
 msgid "Invalid security key"
 msgstr ""
 
+#: framework/configs/options.php:122
+msgid "Invert Text color"
+msgstr ""
+
+#: framework/configs/options.php:854
+msgid "Italic"
+msgstr ""
+
+#. Name of the theme
+msgid "Jinx"
+msgstr ""
+
+#. Description of the theme
+msgid "Jinx - Pet Shop &amp; Veterinary WooCommerce Theme"
+msgstr ""
+
+#. Name of the template
+msgid "Jinx Full Width"
+msgstr ""
+
+#. Name of the template
+msgid "Jinx No Sidebar"
+msgstr ""
+
+#: framework/configs/options.php:893
+msgid "Justify"
+msgstr ""
+
 #. Author of the theme
 msgid "LA Studio"
 msgstr ""
 
-#: framework/woocommerce/woocommerce-config.php:695
+#: framework/configs/options.php:871
+msgid "Latin"
+msgstr ""
+
+#: framework/configs/options.php:876
+msgid "Latin Extended"
+msgstr ""
+
+#: framework/configs/options.php:894
+msgid "Left"
+msgstr ""
+
+#: framework/configs/options.php:256 framework/configs/options.php:343
+#: framework/configs/options.php:432 framework/configs/options.php:521
+#: framework/configs/options.php:610 framework/configs/options.php:699
+#: framework/configs/options.php:788
+msgid "Letter Spacing, px"
+msgstr ""
+
+#: framework/configs/options.php:243 framework/configs/options.php:330
+#: framework/configs/options.php:419 framework/configs/options.php:508
+#: framework/configs/options.php:597 framework/configs/options.php:686
+#: framework/configs/options.php:775
+msgid "Line Height"
+msgstr ""
+
+#: framework/configs/options.php:130
+msgid "Link color"
+msgstr ""
+
+#: framework/configs/options.php:138
+msgid "Link hover color"
+msgstr ""
+
+#: framework/third/lastudio-kit.php:130
+msgid "List 1"
+msgstr ""
+
+#: framework/third/lastudio-kit.php:131
+msgid "List 2"
+msgstr ""
+
+#: framework/woocommerce/woocommerce-config.php:697
 msgid "List view"
 msgstr ""
 
@@ -562,6 +779,14 @@ msgstr ""
 
 #: comments.php:81
 msgid "Logged in as"
+msgstr ""
+
+#: framework/configs/options.php:26 framework/configs/options.php:32
+msgid "Logo"
+msgstr ""
+
+#: framework/configs/options.php:44
+msgid "Logo Transparency"
 msgstr ""
 
 #: framework/third/lastudio-kit.php:82
@@ -582,11 +807,6 @@ msgstr ""
 #: framework/classes/breadcrumbs.php:915
 msgctxt "minute archives time format"
 msgid "i"
-msgstr ""
-
-#: functions.php:635
-msgctxt "Montaga font: on or off"
-msgid "on"
 msgstr ""
 
 #: framework/classes/breadcrumbs.php:949 framework/classes/breadcrumbs.php:1005
@@ -615,6 +835,14 @@ msgstr ""
 msgid "No products were added to the wishlist"
 msgstr ""
 
+#: framework/configs/options.php:853
+msgid "Normal"
+msgstr ""
+
+#: framework/configs/options.php:855
+msgid "Oblique"
+msgstr ""
+
 #: woocommerce/la_wishlist.php:96
 msgid "Out of Stock"
 msgstr ""
@@ -629,8 +857,16 @@ msgstr ""
 msgid "Page %s"
 msgstr ""
 
-#: single-elementor_library.php:48 templates/fullwidth.php:44
-#: templates/no-sidebar.php:51 partials/single.php:45
+#: framework/configs/options.php:57
+msgid "Page preloader"
+msgstr ""
+
+#: framework/configs/options.php:72
+msgid "Page preloader type"
+msgstr ""
+
+#: single-elementor_library.php:49 templates/fullwidth.php:44
+#: templates/no-sidebar.php:51 partials/single.php:53
 msgid "Pages:"
 msgstr ""
 
@@ -638,11 +874,11 @@ msgstr ""
 msgid "Pingback:"
 msgstr ""
 
-#: functions.php:554
+#: functions.php:549
 msgid "Please, provide valid mail"
 msgstr ""
 
-#: functions.php:555
+#: functions.php:550
 msgid "Please, set up MailChimp API key and List ID"
 msgstr ""
 
@@ -657,6 +893,14 @@ msgstr ""
 #: woocommerce/la_wishlist.php:53 woocommerce/la_wishlist.php:103
 #: framework/woocommerce/woocommerce-compare.php:296
 msgid "Price"
+msgstr ""
+
+#: functions.php:686 functions.php:704
+msgid "Primary"
+msgstr ""
+
+#: framework/configs/options.php:106
+msgid "Primary Text color"
 msgstr ""
 
 #: woocommerce/la_wishlist.php:51 woocommerce/la_wishlist.php:91
@@ -692,6 +936,11 @@ msgstr ""
 msgid "Product has been removed from wishlist"
 msgstr ""
 
+#: functions.php:626
+msgctxt "Raleway font: on or off"
+msgid "on"
+msgstr ""
+
 #: partials/default/content.php:59
 msgid "Read more"
 msgstr ""
@@ -700,12 +949,27 @@ msgstr ""
 msgid "Recent Posts"
 msgstr ""
 
+#: framework/configs/options.php:244 framework/configs/options.php:331
+#: framework/configs/options.php:420 framework/configs/options.php:509
+#: framework/configs/options.php:598 framework/configs/options.php:687
+#: framework/configs/options.php:776
+msgid "Relative to the font-size of the element"
+msgstr ""
+
 #: woocommerce/la_compare.php:103
 msgid "Remove"
 msgstr ""
 
+#: framework/configs/options.php:39 framework/configs/options.php:51
+msgid "Remove Logo"
+msgstr ""
+
 #: woocommerce/la_wishlist.php:82
 msgid "Remove this item"
+msgstr ""
+
+#: framework/configs/options.php:895
+msgid "Right"
 msgstr ""
 
 #. %s is the search query. The HTML entities are opening and closing curly quotes.
@@ -717,16 +981,32 @@ msgstr ""
 msgid "Search results for: "
 msgstr ""
 
-#: functions.php:557
+#: functions.php:690 functions.php:708
+msgid "Secondary"
+msgstr ""
+
+#: framework/configs/options.php:114
+msgid "Secondary Text color"
+msgstr ""
+
+#: framework/configs/options.php:38 framework/configs/options.php:50
+msgid "Select Logo"
+msgstr ""
+
+#: functions.php:552
 msgid "Server error. Please, try again later"
 msgstr ""
 
-#: framework/woocommerce/woocommerce-config.php:676
-#: framework/woocommerce/woocommerce-config.php:680
+#: framework/woocommerce/woocommerce-config.php:678
+#: framework/woocommerce/woocommerce-config.php:682
 msgid "Show"
 msgstr ""
 
-#: framework/woocommerce/woocommerce-config.php:149
+#: framework/configs/options.php:63
+msgid "Show page preloader"
+msgstr ""
+
+#: framework/woocommerce/woocommerce-config.php:151
 msgid "Sidebar - Shop"
 msgstr ""
 
@@ -760,13 +1040,27 @@ msgstr ""
 msgid "Stock Status"
 msgstr ""
 
-#: functions.php:558
+#: functions.php:553
 msgid "Success"
 msgstr ""
 
-#: single-elementor_library.php:44 templates/fullwidth.php:40
-#: templates/no-sidebar.php:47 partials/single.php:41
+#: templates/fullwidth.php:40 templates/no-sidebar.php:47
 msgid "Tagged "
+msgstr ""
+
+#: partials/single.php:49
+msgid "Tagged: "
+msgstr ""
+
+#: functions.php:694 functions.php:712
+msgid "Text"
+msgstr ""
+
+#: framework/configs/options.php:277 framework/configs/options.php:366
+#: framework/configs/options.php:455 framework/configs/options.php:544
+#: framework/configs/options.php:633 framework/configs/options.php:722
+#: framework/configs/options.php:810
+msgid "Text Align"
 msgstr ""
 
 #: framework/third/lastudio-kit.php:9
@@ -787,39 +1081,56 @@ msgid "Title"
 msgstr ""
 
 #: framework/third/lastudio-kit.php:66 framework/third/lastudio-kit.php:81
+#: framework/third/lastudio-kit.php:139 framework/configs/options.php:79
 msgid "Type 1"
 msgstr ""
 
-#: framework/third/lastudio-kit.php:67
+#: framework/third/lastudio-kit.php:67 framework/third/lastudio-kit.php:140
+#: framework/configs/options.php:80
 msgid "Type 2"
 msgstr ""
 
-#: framework/third/lastudio-kit.php:68
+#: framework/third/lastudio-kit.php:68 framework/third/lastudio-kit.php:141
+#: framework/configs/options.php:81
 msgid "Type 3"
 msgstr ""
 
-#: framework/third/lastudio-kit.php:69
+#: framework/third/lastudio-kit.php:69 framework/third/lastudio-kit.php:142
+#: framework/configs/options.php:82
 msgid "Type 4"
 msgstr ""
 
-#: framework/third/lastudio-kit.php:70
+#: framework/third/lastudio-kit.php:70 framework/third/lastudio-kit.php:143
+#: framework/configs/options.php:83
 msgid "Type 5"
 msgstr ""
 
-#: framework/third/lastudio-kit.php:71
+#: framework/third/lastudio-kit.php:71 framework/third/lastudio-kit.php:144
 msgid "Type 6"
 msgstr ""
 
-#: framework/third/lastudio-kit.php:72
+#: framework/third/lastudio-kit.php:72 framework/third/lastudio-kit.php:145
 msgid "Type 7"
 msgstr ""
 
-#: framework/third/lastudio-kit.php:73
+#: framework/third/lastudio-kit.php:73 framework/third/lastudio-kit.php:146
 msgid "Type 8"
 msgstr ""
 
-#: framework/woocommerce/woocommerce-config.php:666
-#: framework/woocommerce/woocommerce-config.php:669
+#: framework/third/lastudio-kit.php:147
+msgid "Type 9"
+msgstr ""
+
+#: framework/configs/options.php:195
+msgid "Typography"
+msgstr ""
+
+#: framework/configs/options.php:874
+msgid "Vietnamese"
+msgstr ""
+
+#: framework/woocommerce/woocommerce-config.php:668
+#: framework/woocommerce/woocommerce-config.php:671
 msgid "View"
 msgstr ""
 
@@ -842,17 +1153,17 @@ msgstr ""
 msgid "Weight"
 msgstr ""
 
-#: framework/classes/class-admin.php:40
+#: framework/classes/class-admin.php:41
 msgid "Widget Name"
 msgstr ""
 
-#: functions.php:618
+#: functions.php:613
 msgid ""
 "Widgets in this area will be displayed in the left or right sidebar area if "
 "you choose the Left or Right Sidebar layout."
 msgstr ""
 
-#: framework/woocommerce/woocommerce-config.php:151
+#: framework/woocommerce/woocommerce-config.php:153
 msgid "Widgets in this area will be displayed in the shop page."
 msgstr ""
 

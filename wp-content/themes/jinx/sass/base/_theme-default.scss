@@ -238,24 +238,51 @@ ol.wp-block-latest-comments,
 		}
 	}
 }
-
+body .blocks-gallery-grid .blocks-gallery-image figcaption,
+body .blocks-gallery-grid .blocks-gallery-item figcaption,
+body .wp-block-gallery .blocks-gallery-image figcaption,
+body .wp-block-gallery .blocks-gallery-item figcaption {
+	padding: .7em;
+	line-height: normal;
+}
+body .wp-block-gallery.columns-7 .blocks-gallery-item figcaption,
+body .wp-block-gallery.columns-8 .blocks-gallery-item figcaption {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+	display: block;
+	display: -webkit-box;
+	line-height: 1.6;
+	font-size: 12px;
+	max-height: 5.8em;
+}
 @media (min-width: 960px) {
-	.alignwide{
-		width: auto;
-		max-width: 1170px;
-	}
-	.alignfull:not(.wp-block-pullquote) {
-		margin-left: calc(-1*(100vw - 100% - var(--scrollbar-width-o))/2);
-		margin-right: calc(-1*(100vw - 100% - var(--scrollbar-width-o))/2);
-		width: auto;
-		max-width: calc(100vw - var(--scrollbar-width-o));
-	}
 	.site-no-sidebar {
+		.alignwide{
+			width: auto;
+			max-width: 1170px;
+		}
+		.alignfull:not(.wp-block-pullquote) {
+			margin-left: calc(-1*(100vw - 100% - var(--scrollbar-width-o))/2);
+			margin-right: calc(-1*(100vw - 100% - var(--scrollbar-width-o))/2);
+			width: auto;
+			max-width: calc(100vw - var(--scrollbar-width-o));
+		}
 		&:not(.elementor-page) {
 			&:not(.woocommerce-page) {
+				.comments-area,
+				.page-content,
+				.site-content--default > .post-tags,
+				.site-content--default > .post-tags{
+					width: 930px;
+					max-width: 100%;
+					margin-left: auto;
+					margin-right: auto;
+				}
 				.alignwide{
-					margin-left: -185px;
-					margin-right: -185px;
+					margin-left: -120px;
+					margin-right: -120px;
 				}
 			}
 		}
@@ -278,7 +305,7 @@ ol.wp-block-latest-comments,
 }
 
 .site-header--default .site-branding img {
-	width: 102px;
+	width: 160px;
 }
 @media (min-width: 1025px) {
 	.site-header--default .site-nav-toggleicon{
@@ -394,4 +421,9 @@ ol.wp-block-latest-comments,
 	body.admin-bar .site-header--default .site-nav-toggleicon + * {
 		max-height: calc(100vh - 100px - 46px);
 	}
+}
+
+.site-content--default .post_item-thumbnail-figure img {
+	width: auto;
+	margin-left: 0;
 }
