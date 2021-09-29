@@ -118,16 +118,7 @@ add_action('elementor/element/lakit-portfolio/section_settings/before_section_en
 
 add_filter('lastudio-kit/testimonials/control/preset', 'jinx_lakit_add_testimonials_style');
 function jinx_lakit_add_testimonials_style( $styles ){
-    $styles = [
-        'type-1' => esc_html__( 'Type 1', 'jinx' ),
-        'type-2' => esc_html__( 'Type 2', 'jinx' ),
-        'type-3' => esc_html__( 'Type 3', 'jinx' ),
-        'type-4' => esc_html__( 'Type 4', 'jinx' ),
-        'type-5' => esc_html__( 'Type 5', 'jinx' ),
-        'type-6' => esc_html__( 'Type 6', 'jinx' ),
-        'type-7' => esc_html__( 'Type 7', 'jinx' ),
-        'type-9' => esc_html__( 'Type 8', 'jinx' ),
-    ];
+
     return $styles;
 }  
 add_filter('lastudio-kit/posts/control/preset', 'jinx_lakit_add_posts_style');

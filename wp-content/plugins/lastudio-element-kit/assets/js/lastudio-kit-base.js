@@ -922,7 +922,7 @@
                     });
                 })
                 .on('click', function (e){
-                    if( $(e.target).closest('.lakit-cart').length == 0 ) {
+                    if( $(e.target).closest('.lakit-cart').length == 0 && $(e.target).closest('.wrap-addto').length == 0 && $(e.target).closest('form.cart').length == 0 && $(e.target).closest('div.cart').length == 0 ) {
                         $('.lakit-cart').removeClass('lakit-cart-open');
                     }
                 })

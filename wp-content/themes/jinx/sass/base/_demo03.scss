@@ -7,52 +7,77 @@
 .lakit-posts__thumbnail{
   overflow: hidden;
 }
-.lastudio-kit{
-  .lakit-testimonials {
-    &.preset-type-9 {
-      .lakit-testimonials {
-        &__item-inner{
-          position: relative;
-          padding-left: 110px;
-        }
-        &__content {
-          @include display();
-          @include flex-flow(column wrap);
-        }
+.lakit-masonry-wrapper .lakit-images-layout__list.col-row {
+  margin: 0 !important;
+}
+//.lastudio-kit{
+//  .lakit-testimonials {
+//    &.preset-type-9 {
+//      .lakit-testimonials {
+//        &__item-inner{
+//          position: relative;
+//          padding-left: 110px;
+//        }
+//        &__content {
+//          @include display();
+//          @include flex-flow(column wrap);
+//        }
+//
+//        &__tag-img {
+//          width: 80px;
+//          height: 80px;
+//          display: block;
+//        }
+//        &__figure {
+//          position: absolute;
+//          padding-top: 10px;
+//          height: auto;
+//        }
+//      }
+//      .lakit-testimonials__rating{
+//        margin-top: -38px;
+//      }
+//      .lakit-testimonials__content {
+//        opacity: .5;
+//      }
+//      .swiper-slide-active .lakit-testimonials__content{
+//        opacity: 1;
+//      }
+//      .swiper-slide .lakit-testimonials__item-inner{
+//        z-index: 1;
+//      }
+//      .swiper-slide-active .lakit-testimonials__item-inner{
+//        z-index: 3;
+//      }
+//      .swiper-slide-active + .swiper-slide .lakit-testimonials__item-inner{
+//        z-index: 2;
+//      }
+//    }
+//  }
+//}
 
-        &__tag-img {
-          width: 80px;
-          height: 80px;
-          display: block;
-        }
-        &__figure {
-          position: absolute;
-          padding-top: 10px;
-          height: auto;
-        }
-      }
-      .lakit-testimonials__rating{
-        margin-top: -38px;
-      }
-      .lakit-testimonials__content {
+.m1_testimonials{
+  overflow: hidden;
+  .swiper-slide-prev {
+    transform: scale(.85) translateX(25%);
+    transform-origin: right;
+  }
+  .swiper-slide-next {
+    transform: scale(.85) translateX(-25%);
+    transform-origin: left;
+  }
+  .swiper-slide-active{
+    z-index: 2;
+  }
+  .lakit-testimonials__item{
+    transition: transform .3s;
+    &:not(.swiper-slide-active){
+      .lakit-testimonials__content{
         opacity: .5;
-      }
-      .swiper-slide-active .lakit-testimonials__content{
-        opacity: 1;
-      }
-      .swiper-slide .lakit-testimonials__item-inner{
-        z-index: 1;
-      }
-      .swiper-slide-active .lakit-testimonials__item-inner{
-        z-index: 3;
-      }
-      .swiper-slide-active + .swiper-slide .lakit-testimonials__item-inner{
-        z-index: 2;
       }
     }
   }
 }
-
 /*
   $TEAM_MEMBER_PRESET_10
 */
@@ -141,7 +166,6 @@ body{
       font-size: 15px;
       font-weight: 400;
       line-height: 20px;
-      text-transform: capitalize;
       letter-spacing: 0.03em;
       border: 1px solid var(--theme-border-color);
       padding: 10px 40px;

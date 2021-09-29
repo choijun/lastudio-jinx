@@ -38,6 +38,11 @@ if(!class_exists('LaStudioKit_Posts')) {
 			return 'lakit-posts';
 		}
 
+        protected function get_html_wrapper_class()
+        {
+            return 'lastudio-kit elementor-lakit-gposts elementor-' . $this->get_name();
+        }
+
 		protected function get_widget_title() {
 			return esc_html__( 'Posts', 'lastudio-kit' );
 		}

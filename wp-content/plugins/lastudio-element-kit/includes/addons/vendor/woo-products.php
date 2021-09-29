@@ -478,6 +478,31 @@ class LaStudioKit_Woo_Products extends LaStudioKit_Base {
             ]
         );
 
+        $this->add_control(
+            'image_bg',
+            [
+                'label' => esc_html__( 'Background Color', 'lastudio-kit' ),
+                'type' => Controls_Manager::COLOR,
+                'selectors' => [
+                    '{{WRAPPER}} .woocommerce-loop-product__link .figure__object_fit' => 'background-color: {{VALUE}}',
+                ],
+                'condition' => [
+                    'enable_alt_image' => 'yes'
+                ]
+            ]
+        );
+
+        $this->add_control(
+            'image2_bg',
+            [
+                'label' => esc_html__( 'Crossfade Background Color', 'lastudio-kit' ),
+                'type' => Controls_Manager::COLOR,
+                'selectors' => [
+                    '{{WRAPPER}} .woocommerce-loop-product__link .figure__object_fit.p_img-second' => 'background-color: {{VALUE}}',
+                ],
+            ]
+        );
+
         $this->add_responsive_control(
             'custom_image_width',
             array(

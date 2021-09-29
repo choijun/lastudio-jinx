@@ -75,6 +75,7 @@ class LaStudioKit_Testimonials extends LaStudioKit_Base {
                 'type-7' => esc_html__( 'Type 7', 'lastudio-kit' ),
                 'type-8' => esc_html__( 'Type 8', 'lastudio-kit' ),
                 'type-9' => esc_html__( 'Type 9', 'lastudio-kit' ),
+                'type-10' => esc_html__( 'Type 10', 'lastudio-kit' ),
             )
         );
 

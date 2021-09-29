@@ -24,7 +24,7 @@ if ( ! defined( 'WPINC' ) ) {
     die;
 }
 
-if(!function_exists('LaStudio_Kit')){
+if(!class_exists('LaStudio_Kit')){
     class LaStudio_Kit{
         /**
          * A reference to an instance of this class.
