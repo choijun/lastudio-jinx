@@ -120,6 +120,7 @@ class Custom_CSS {
 				'dynamic' => [
 					'active' => true,
 				],
+                'event' => 'MyClickEvent',
 				'placeholder' => __( 'key|value', 'lastudio-kit' ),
 				'description' => sprintf( __( 'Set custom attributes for the wrapper element. Each attribute in a separate line. Separate attribute key from the value using %s character.', 'lastudio-kit' ), '<code>|</code>' ),
 				'classes' => 'elementor-control-direction-ltr',
@@ -134,6 +135,18 @@ class Custom_CSS {
 
 		if ( ! empty( $settings['_attributes'] ) ) {
 			$attributes = \Elementor\Utils::parse_custom_attributes( $settings['_attributes'], "\n" );
+
+			$black_list = [ 'id', 'class', 'data-id', 'data-settings', 'data-element_type', 'data-widget_type', 'data-model-cid' ];
+
+			foreach ( $attributes as $attribute => $value ) {
+				if ( ! in_array( $attribute, $black_list, true ) ) {
+					$element->add_render_attribute( '_wrapper', $attribute, $value );
+				}
+			}
+		}
+
+		if ( ! empty( $settings['_duytest'] ) ) {
+			$attributes = \Elementor\Utils::parse_custom_attributes( $settings['_duytest'], "\n" );
 
 			$black_list = [ 'id', 'class', 'data-id', 'data-settings', 'data-element_type', 'data-widget_type', 'data-model-cid' ];
 

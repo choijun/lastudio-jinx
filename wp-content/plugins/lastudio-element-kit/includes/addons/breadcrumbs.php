@@ -84,6 +84,19 @@ class LaStudioKit_Breadcrumbs extends LaStudioKit_Base {
         );
 
         $this->add_control(
+            'custom_page_title',
+            array(
+                'label'       => esc_html__( 'Custom Page Title', 'lastudio-kit' ),
+                'label_block' => true,
+                'type'        => Controls_Manager::TEXT,
+                'default'     => '',
+                'condition' => array(
+                    'show_title' => 'yes',
+                ),
+            )
+        );
+
+        $this->add_control(
             'title_tag',
             array(
                 'label' => esc_html__( 'Title HTML Tag', 'lastudio-kit' ),
@@ -845,6 +858,11 @@ class LaStudioKit_Breadcrumbs extends LaStudioKit_Base {
         $settings = $this->get_settings();
 
         $title_format = '<' . $settings['title_tag'] . ' class="lakit-breadcrumbs__title">%s</' . $settings['title_tag'] . '>';
+
+        $custom_page_title = $this->get_settings_for_display('custom_page_title');
+        if(!empty($custom_page_title)){
+            $title_format = '<' . $settings['title_tag'] . ' class="lakit-breadcrumbs__title">'.$custom_page_title.'</' . $settings['title_tag'] . '>';
+        }
 
         $custom_home_page_enabled = ! empty( $settings['enabled_custom_home_page_label'] ) ? $settings['enabled_custom_home_page_label'] : false;
         $custom_home_page_enabled = filter_var( $custom_home_page_enabled, FILTER_VALIDATE_BOOLEAN );

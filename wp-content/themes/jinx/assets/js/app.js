@@ -1410,9 +1410,12 @@
         $('.menu li a:empty', $sidebar_inner).each(function () {
             $(this).closest('li').remove();
         });
+
+        $('.elementor-widget-wp-widget-categories > .elementor-widget-container > ul, .elementor-widget-wp-widget-pages > .elementor-widget-container > ul,.elementor-widget-wp-widget-meta > .elementor-widget-container > ul, .elementor-widget-woocommerce_product_categories > .elementor-widget-container > ul').addClass('menu').closest('.elementor-element').addClass('accordion-menu');
         $('.widget_pages > ul, .widget_archive > ul, .widget_categories > ul, .widget_product_categories > ul, .widget_meta > ul', $sidebar_inner).addClass('menu').closest('.widget').addClass('accordion-menu');
         $('.widget_nav_menu', $sidebar_inner).closest('.widget').addClass('accordion-menu');
         $('.widget_categories > ul li.cat-parent,.widget_product_categories li.cat-parent', $sidebar_inner).addClass('mm-item-has-sub');
+        $('.elementor-widget-wp-widget-categories > .elementor-widget-container > ul li.cat-parent,.elementor-widget-woocommerce_product_categories > .elementor-widget-container li.cat-parent', $sidebar_inner).addClass('mm-item-has-sub');
         $('.menu li > ul', $sidebar_inner).each(function () {
             var $ul = $(this);
             $ul.before('<span class="narrow"><i></i></span>');
@@ -1573,20 +1576,24 @@
             }
         });
 
-        $(document).on('click mouseenter', '.custom-click-swiper-dots', function (e) {
-            var _swiper_for, _swiper, _slide_idx;
-            _swiper_for = $(this).attr('class').match(/\bswiper-for-([^\s]*)/);
-            if (_swiper_for !== null && _swiper_for[1]) {
-                _swiper = $('.' + _swiper_for[1]).find('.swiper-container').first().data('swiper');
-                if (_swiper !== "undefined") {
-                    _slide_idx = $(this).attr('class').match(/\bslide-index-(\d+)/);
-                    if (_slide_idx !== null && _slide_idx[1]) {
-                        /* remove active status for other slides */
-                        $('.custom-click-swiper-dots.' + _swiper_for[0]).removeClass('custom-active-swiper-dots');
-                        $(this).addClass('custom-active-swiper-dots');
-                        _swiper.slideTo(parseInt(_slide_idx[1]));
-                    }
-                }
+        $(document).on('click mouseenter', '[swiper_cdots]', function (e){
+            e.preventDefault();
+            // swiper_id, slide_index
+            var _swiper, _slide_idx, _swiper_for;
+            _swiper_for = $(this).attr('swiper_id');
+            if($(_swiper_for).hasClass('swiper-container')){
+                _swiper = $(_swiper_for).data('swiper');
+            }
+            else{
+                _swiper = $(_swiper_for).find('.swiper-container').first().data('swiper');
+            }
+            if( _swiper !== "undefined" ){
+                _slide_idx = parseInt($(this).attr('slide_idx') || 0);
+                $('[swiper_cdots][swiper_id="'+_swiper_for+'"]').removeClass('active-swiper-cdots');
+                $(this).addClass('active-swiper-cdots');
+                try {
+                    _swiper.slideTo(_slide_idx);
+                }catch (ex){}
             }
         });
     }

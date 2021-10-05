@@ -20,11 +20,16 @@
             }
 
             function checkActiveMobileTrigger(){
-                if(_has_mobile_bkp !== false && $(window).width() <= _has_mobile_bkp){
-                    $scope.find('.lakit-mobile-menu').addClass('lakit-active--mbmenu');
-                }
-                else{
-                    $scope.find('.lakit-mobile-menu').removeClass('lakit-active--mbmenu');
+                if(_has_mobile_bkp !== false){
+                    if(_has_mobile_bkp == 'all'){
+                        $scope.find('.lakit-mobile-menu').addClass('lakit-active--mbmenu');
+                    }
+                    else if($(window).width() <= _has_mobile_bkp){
+                        $scope.find('.lakit-mobile-menu').addClass('lakit-active--mbmenu');
+                    }
+                    else{
+                        $scope.find('.lakit-mobile-menu').removeClass('lakit-active--mbmenu');
+                    }
                 }
             }
             checkActiveMobileTrigger();

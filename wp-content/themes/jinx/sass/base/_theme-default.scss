@@ -274,7 +274,7 @@ body .wp-block-gallery.columns-8 .blocks-gallery-item figcaption {
 				.comments-area,
 				.page-content,
 				.site-content--default > .post-tags,
-				.site-content--default > .post-tags{
+				.site-content--default > .page-links{
 					width: 930px;
 					max-width: 100%;
 					margin-left: auto;
@@ -285,6 +285,9 @@ body .wp-block-gallery.columns-8 .blocks-gallery-item figcaption {
 					margin-right: -120px;
 				}
 			}
+		}
+		.elementor-lakit-post-comment .comments-area {
+			min-width: 100%;
 		}
 	}
 }

@@ -301,7 +301,7 @@ class LaStudioKit_Post_Featured_Image extends LaStudioKit_Base {
             ]
         );
 
-        $this->add_control(
+        $this->add_responsive_control(
             'image_border_radius',
             [
                 'label' => __( 'Border Radius', 'lastudio-kit' ),

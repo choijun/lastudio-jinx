@@ -71,42 +71,35 @@ span.sticky-post {
 }
 
 /*
-    $PRESET_POST_GRID_03
-  */
+	$PRESET_POST_GRID_03
+*/
 .lakit-posts {
   &.preset-grid-3{
+		.post-thumbnail,
   	.lakit-posts__inner-box{
-  		overflow: initial;
+  		overflow: inherit;
   	}
+		.lakit-posts__thumbnail-link{
+			border-radius: inherit;
+		}
     .post-thumbnail{
       &:before {
           content: "";
           position: absolute;
-          top: 0;
-          left: 0;
-          bottom: 0;
-          right: 0;
-          margin: -30px 30px 30px -30px;
-          border-style: dashed;
-          border-width: 2px;
-          border-color: #FFCAB0;
-          border-radius: 30px;
-      }
-      .lakit-posts__thumbnail-link{
-        border-radius: 30px;
+          top: -30px;
+          left: -30px;
+					width: 100%;
+					height: 100%;
+          border: 2px dashed #FFCAB0;
+          border-radius: inherit;
       }
     }
   }
 }
 
-@media(max-width: 1024px){
-	.lakit-posts {
-	  &.preset-grid-3{
-	    .post-thumbnail{
-	      &:before {
-	      	display: none;
-	      }
-	    }
-	  }
+@media(max-width: 1280px){
+	.lakit-posts.preset-grid-3 .post-thumbnail:before{
+		top: -10px;
+		left: -10px;
 	}
 }

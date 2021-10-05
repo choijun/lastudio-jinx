@@ -116,36 +116,29 @@ add_action('elementor/element/lakit-portfolio/section_settings/before_section_en
 	);
 }, 10 );
 
-add_filter('lastudio-kit/testimonials/control/preset', 'jinx_lakit_add_testimonials_style');
-function jinx_lakit_add_testimonials_style( $styles ){
-
-    return $styles;
-}  
 add_filter('lastudio-kit/posts/control/preset', 'jinx_lakit_add_posts_style');
-function jinx_lakit_add_posts_style( $styles ){
-    $styles = [
-        'grid-1' => esc_html__( 'Grid 1', 'jinx' ),
-        'grid-2' => esc_html__( 'Grid 2', 'jinx' ),
-        'grid-3' => esc_html__( 'Grid 3', 'jinx' ),
-        'list-1' => esc_html__( 'List 1', 'jinx' ),
-        'list-2' => esc_html__( 'List 2', 'jinx' ),
-        
-    ];
-    return $styles;
-}    
+if(!function_exists('jinx_lakit_add_posts_style')){
+    function jinx_lakit_add_posts_style( $styles ){
+        $styles['grid-3'] = esc_html__( 'Grid 3', 'jinx' );
+        return $styles;
+    }
+}
 add_filter('lastudio-kit/team-member/control/preset', 'jinx_lakit_add_team_member_style');
-function jinx_lakit_add_team_member_style( $styles ){
-    $styles = [
-        'type-1' => esc_html__( 'Type 1', 'jinx' ),
-        'type-2' => esc_html__( 'Type 2', 'jinx' ),
-        'type-3' => esc_html__( 'Type 3', 'jinx' ),
-        'type-4' => esc_html__( 'Type 4', 'jinx' ),
-        'type-5' => esc_html__( 'Type 5', 'jinx' ),
-        'type-6' => esc_html__( 'Type 6', 'jinx' ),
-        'type-7' => esc_html__( 'Type 7', 'jinx' ),
-        'type-8' => esc_html__( 'Type 8', 'jinx' ),
-        'type-10' => esc_html__( 'Type 9', 'jinx' ),
-        
-    ];
-    return $styles;
-}    
+if(!function_exists('jinx_lakit_add_team_member_style')){
+    function jinx_lakit_add_team_member_style( $styles ){
+        $styles['type-10'] = esc_html__( 'Type 10', 'jinx' );
+        return $styles;
+    }
+}
+
+add_action('elementor/element/section/section_layout/before_section_end', 'jinx_elementor_section_html_tag');
+if(!function_exists('jinx_elementor_section_html_tag')){
+    function jinx_elementor_section_html_tag( $element ){
+        $element->update_control(
+            'html_tag',
+            [
+                'default' => 'div'
+            ]
+        );
+    }
+}
