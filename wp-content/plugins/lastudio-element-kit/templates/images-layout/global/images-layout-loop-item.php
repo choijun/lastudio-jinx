@@ -68,7 +68,7 @@ $btn_icon =  $this->_btn_icon('<span class="btn-icon">%s</span>');
                 if('external' === $link_type){
                     $item_link_text = $this->_loop_item( array( 'item_link_text' ), '<span>%s</span>');
                     if(!empty($item_link_text) || !empty($btn_icon)){
-                        echo sprintf('<button class="elementor-button lakit-images-layout__button button">%1$s%2$s</button>', $item_link_text, $btn_icon);
+                        echo sprintf('<div class="elementor-button lakit-images-layout__button button">%1$s%2$s</div>', $item_link_text, $btn_icon);
                     }
                 }
             ?></div>
