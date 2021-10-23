@@ -863,13 +863,17 @@
 		opacity: 0;
 		visibility: hidden;
 		transition: all .3s;
+		pointer-events: none;
+		.products-grid-6 & {
+			background-color: #fff;
+		}
 	}
 	.product_item--inner:hover{
 		.item--overlay {
 			opacity: 0;
 			visibility: inherit;
 			.products-grid-6 & {
-				opacity: .9;
+				opacity: .8;
 			}
 		}
 	}

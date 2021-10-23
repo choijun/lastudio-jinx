@@ -484,11 +484,9 @@ class LaStudioKit_Woo_Products extends LaStudioKit_Base {
                 'label' => esc_html__( 'Background Color', 'lastudio-kit' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
+                    '{{WRAPPER}} .product_item--thumbnail' => 'background-color: {{VALUE}}',
                     '{{WRAPPER}} .woocommerce-loop-product__link .figure__object_fit' => 'background-color: {{VALUE}}',
                 ],
-                'condition' => [
-                    'enable_alt_image' => 'yes'
-                ]
             ]
         );
 
@@ -500,6 +498,9 @@ class LaStudioKit_Woo_Products extends LaStudioKit_Base {
                 'selectors' => [
                     '{{WRAPPER}} .woocommerce-loop-product__link .figure__object_fit.p_img-second' => 'background-color: {{VALUE}}',
                 ],
+                'condition' => [
+                    'enable_alt_image' => 'yes'
+                ]
             ]
         );
 

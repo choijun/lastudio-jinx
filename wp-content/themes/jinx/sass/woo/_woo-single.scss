@@ -188,7 +188,7 @@
       margin-right: 10px;
     }
     display: flex;
-    margin-bottom: 1em;
+    margin-bottom: 32px;
     .button {
       padding: 22px 50px;
       @media(min-width: 1400px){
@@ -202,20 +202,20 @@
     color: $body-font-color;
     padding: 0;
     margin: 0 2em .5em 0;
-    font-weight: normal;
+    font-weight: 500;
     display: inline-flex;
     align-items: center;
     &:hover{
       color: $primary-color;
     }
     .labtn-icon{
-      margin-right: .3em;
+      margin-right: .5em;
       font-size: 1.2em;
     }
   }
-  .add_wishlist{
+  .add_compare{
     .labtn-icon{
-      font-size: 1em;
+      font-size: 1.5em;
     }
   }
 }
@@ -313,20 +313,21 @@ Quick View
           a{
             &:after{
               content: '';
-              border-bottom: 2px solid $primary-color;
+              border-bottom: 0.28em solid $primary-color;
               position: absolute;
               width: 0;
-              bottom: 0;
+              bottom: -0.15em;
               left: 50%;
               transform: translateX(-50%);
               transition: all .3s;
+              border-radius: 10px;
             }
           }
           &.active,
           &:hover{
             a{
               &:after{
-                width: 70px;
+                width: 100%;
               }
             }
           }
@@ -350,19 +351,4 @@ Quick View
 }
 .featherlight-outer .wc-page-content .entry-summary .cart .wrap-cart-cta {
   display: inline-flex;
-}
-@media(min-width: 1200px){
-  .cart .wrap-cart-cta{
-    display: inline-flex;
-    margin-right: 30px;
-  }
-  .cart .add_wishlist,
-  .cart .add_compare{
-    .labtn-icon{
-      font-size: 20px;
-    }
-    .labtn-text{
-      display: none;
-    }
-  }
 }

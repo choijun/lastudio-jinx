@@ -290,7 +290,7 @@ form.lost_reset_password .form-row {
   width: 670px;
   max-width: 100%;
   position: relative;
-  padding-top: 50px;
+  padding-top: 80px;
   overflow: hidden;
   p{
     margin-bottom: 20px;
@@ -302,11 +302,11 @@ form.lost_reset_password .form-row {
     clear: both;
   }
   h2{
-    font-size: 20px;
+    font-size: 26px;
     font-weight: 500;
     cursor: pointer;
     position: absolute;
-    top: 0;
+    top: 20px;
     left: 0;
     margin: 0;
     color: var(--theme-search-color);
@@ -315,6 +315,7 @@ form.lost_reset_password .form-row {
       @include lastudio-icon();
       padding-right: 10px;
       font-size: .8em;
+      display: none;
     }
     + form{
       display: none;
@@ -336,14 +337,20 @@ form.lost_reset_password .form-row {
   }
   >div.active>h2 {
     text-transform: capitalize;
-    font-size: 24px;
+    font-size: 40px;
     font-weight: 600;
     color: $secondary-color;
     cursor: default;
-    padding-bottom: 5px;
-    border-bottom: 3px solid var(--theme-primary-color);;
+    top: 0px;
     &:before{
       display: none;
+    }
+    &:after{
+      content: '';
+      display: block;
+      border-bottom: 3px solid var(--theme-primary-color);;
+      width: 50px;
+      margin-top: 15px;
     }
   }
   .col-2{

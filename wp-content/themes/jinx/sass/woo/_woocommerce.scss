@@ -241,7 +241,7 @@ p.stars {
 
 .wc-toolbar {
   line-height: 24px;
-  margin-bottom: 68px;
+  margin-bottom: 45px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -585,8 +585,11 @@ p.stars {
     @include justify-content(space-between);
     .widget {
       margin-bottom: 30px;
-      width: 20%;
+      width: calc( (100% - 45px) / 4 );
       margin-right: 15px;
+      &:last-child{
+        margin-right: 0;
+      }
       ul {
         &.menu {
           li {
@@ -621,18 +624,30 @@ p.stars {
   .wc-layered-nav-term .count {
     display: none;
   }
-
+  .widget_price_filter{
+    .ui-slider{
+      height: 6px;
+      margin-bottom: 20px;
+      .ui-slider-handle{
+        width: 16px;
+        height: 16px;
+        top: -6px
+      }
+    }
+  }
+  a.tag-cloud-link {
+    font-size: 1em !important;
+    &:not(:last-child):after {
+      content: ',';
+      margin-right: .2em
+    }
+  }
+  .widget-title span:after{
+    width: 30px;
+    height: 4px;
+  }
 }
 
-.sidebar-inner--filters .widget_price_filter .price_slider_amount {
-  flex-direction: column-reverse;
-}
-.sidebar-inner--filters .widget_price_filter .ui-slider {
-  margin-bottom: 10px;
-}
-.sidebar-inner--filters .widget_price_filter .price_slider_amount .price_label {
-  margin-bottom: 20px;
-}
 
 .la-advanced-product-filters-result {
   padding-bottom: 15px;
@@ -1038,60 +1053,56 @@ form.track_order {
   .ui-slider {
     margin-bottom: 35px;
     position: relative;
-    background-color: #d8d8d8;
+    background-color: #DFDFDF;
     margin-right: 20px;
-    height: 6px;
+    height: 15px;
+    border-radius: 30px 0 0 30px;
     &:after{
       content: "";
       position: absolute;
-      height: 6px;
+      height: 100%;
       width: 16px;
-      background-color: #d8d8d8;
+      background-color: #DFDFDF;
       right: -16px;
+      border-radius: 0 30px 30px 0;
     }
     .ui-slider-handle {
       position: absolute;
       z-index: 2;
-      width: 18px;
-      height: 18px;
+      width: 26px;
+      height: 26px;
       box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.4);
-      background-color: #fff;
       cursor: ew-resize;
-      top: -8px;
+      top: -7px;
       @include border-radius(50%);
+      background-color: $primary-color;
     }
     .ui-slider-range {
       position: absolute;
       z-index: 1;
-      height: 6px;
-      background-color: $primary-color;
+      height: 15px;
     }
   }
   .price_slider_wrapper {
-    padding-top: 5px;
-    padding-bottom: 20px;
+    padding-top: 40px;
+    position: relative;
   }
   .price_slider_amount {
-    @include display();
-    @include justify-content(space-between);
     .price_label{
-      font-size: 16px;
-      font-weight: 400;
-      color: var(--theme-categories-color);
+      position: absolute;
+      top: 0;
+      left: 0;
     }
     .clear {
       display: none;
     }
   }
   .button {
-    text-transform: uppercase;
-    width: 110px;
-    padding: 8px 10px;
-    line-height: 20px;
-    font-size: 11px;
-    border: 2px solid;
+    border: 1px solid var(--theme-border-color);
     background-color: transparent;
-    color: $secondary-color;
+    color: var(--theme-secondary-color);
+    border-radius: 40px;
+    padding: 14px 30px;
   }
 }
 
@@ -1158,16 +1169,9 @@ ul.wc_payment_methods {
 .la-advanced-product-filters {
   .widget {
     .widget-title {
-      font-size: 1.125em;
+      font-size: 1.25em;
       margin-bottom: 20px;
-      font-family: inherit;
-      letter-spacing: 0;
-      font-weight: 600;
-      &:after {
-        display: none;
-      }
     }
-
     ul {
       li {
         padding: 0;
@@ -1226,9 +1230,10 @@ ul.wc_payment_methods {
             float: left;
             line-height: 1;
             margin-top: .5em;
-            border: 1px solid $three-color;
+            border: 1px solid $border-color;
             width: 15px;
             height: 15px;
+            border-radius: 3px;
           }
           &:after{
             font-family: LaStudioIcons;
@@ -1241,6 +1246,7 @@ ul.wc_payment_methods {
           }
         }
         &:hover,
+        &.active,
         &.chosen{
           a {
             &:before {
@@ -1305,6 +1311,7 @@ p.form-row {
     transition: all 400ms ease-out;
     @include translate2d(-200px, 0);
     background-color: #fff;
+    border-radius: 0;
     .sidebar-inner--filters{
       @include flex-direction(column);
       padding-top: 80px;
@@ -1343,27 +1350,20 @@ p.form-row {
     font-size: 30px;
     line-height: 1;
   }
-  .btn-advanced-shop-filter{
-    &:before {
-      content: '';
-      height: calc(1em + 11px);
-      display: block;
-    }
-    span {
-      display: none;
-    }
-  }
   .wc-toolbar .lasf-custom-dropdown{
     &.wc-custom-filters {
       margin-right: 0;
       margin-left: auto;
     }
     button.btn-advanced-shop-filter {
-      padding: 6px 20px;
+      padding: 5px 15px;
+      vertical-align: middle;
       &:after {
-        right: 20px;
-        content: '\ea0a' !important;
-        font-size: 18px;
+        content: '\ea16' !important;
+        font-size: 16px;
+        position: static;
+        width: auto;
+        margin-left: 5px;
       }
     }
   }

@@ -4,8 +4,8 @@
 	right: 0.5em;
 	font-size: 2em;
 	z-index: 1;
-	width: 50px;
-	height: 50px;
+	width: 42px;
+	height: 42px;
 	text-indent: -9999px;
 	border-radius: 100%;
 	box-sizing: content-box;
@@ -18,8 +18,8 @@
 		border: 1px solid #000;
 		border-radius: 100%;
 		position: absolute;
-		top: 17px;
-		left: 17px;
+		top: 14px;
+		left: 14px;
 	}
 	&:after{
 		content: "";
@@ -29,11 +29,9 @@
 		background: #000;
 		border-radius: 6px;
 		position: absolute;
-		top: 27px;
-		left: 30px;
-		transform: rotate(
-				-45deg
-		);
+		top: 24px;
+		left: 27px;
+		transform: rotate(-45deg);
 	}
 }
 .woocommerce-product-gallery__image a {
@@ -121,6 +119,7 @@ ul.flex-direction-nav {
 
 table.variations{
 	position: relative;
+	margin-bottom: 30px;
 	td{
 		&.value{
 			position: relative;
@@ -455,12 +454,12 @@ section.products > h2 {
 }
 
 .lastudio-kit .lakiticon-type-arrow .wc-tab-title a:after{
-	content: '\ea12';
+	content: '\ea45';
 	font-family: 'LaStudioIcons';
 	transition: all .3s;
 	transform: scale(0.8);
 }
 .lastudio-kit .lakiticon-type-arrow .wc-tab.active .wc-tab-title a:after{
-	content: '\ea12';
+	content: '\ea45';
 	transform: rotate(90deg) scale(0.8);
 }

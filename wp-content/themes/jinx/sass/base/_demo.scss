@@ -311,21 +311,6 @@ body.rtl {
   }
 }
 
-@media(max-width: 767px) {
-  .wc-toolbar-container {
-    position: sticky;
-    position: -webkit-sticky;
-    top: calc( var(--lakit-header-height, 0) + var(--lakit-adminbar-height,0));
-    z-index: 3;
-    background-color: #fff;
-    padding-bottom: 10px;
-    margin-bottom: 0;
-    padding-top: 10px;
-  }
-  .wc-toolbar-top {
-    margin-bottom: 0;
-  }
-}
 
 @media(max-width: 992px) and (min-width: 767px) {
   body:not(.elementor-editor-active) .elementor-hidden-tabletp {

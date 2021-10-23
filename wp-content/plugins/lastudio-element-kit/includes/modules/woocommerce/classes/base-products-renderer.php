@@ -228,7 +228,7 @@ abstract class Base_Products_Renderer extends \WC_Shortcode_Products {
 
             add_action('woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_link_open', -101 );
             add_action('woocommerce_before_shop_loop_item_title', [ $this, 'add_product_thumbnails_to_loop' ], 15 );
-            add_action('woocommerce_before_shop_loop_item_title', [ $this, 'loop_item_thumbnail_overlay' ], 100 );
+//            add_action('woocommerce_before_shop_loop_item_title', [ $this, 'loop_item_thumbnail_overlay' ], 100 );
             add_action('woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_link_close', 101 );
 
             add_action('woocommerce_shop_loop_item_title', [ $this, 'loop_item_info_open' ], -101 );
@@ -252,6 +252,7 @@ abstract class Base_Products_Renderer extends \WC_Shortcode_Products {
     }
     public function loop_item_thumbnail_close(){
             echo '</div>';
+            echo '<span class="item--overlay"></span>';
             echo '<div class="product_item_thumbnail_action product_item--action">';
                 echo '<div class="wrap-addto">';
                     do_action('lastudio-kit/products/action/shop_loop_item_action_top');
