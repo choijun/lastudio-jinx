@@ -338,8 +338,11 @@ if (!defined('ABSPATH')) {
 .site-loading.body-loaded .la-loader-ss:before {
     width: 0
 }
-body:not(.body-completely-loaded) .lahb-nav-wrap .menu ul {
-    display: none;
+@media(min-width: 1280px){
+    body:not(.lakit--js-ready) .lakit-logo__t,
+    .lakit-nav .lakit-nav__mobile-close-btn {
+        display: none;
+    }
 }
 <?php
 $page_loading_bgcolor = jinx_get_option('page_loading_bgcolor', '#fff');
@@ -348,11 +351,6 @@ $page_loading_textcolor = jinx_get_option('page_loading_textcolor', '#181818');
 .la-image-loading{
     background: <?php echo esc_attr($page_loading_bgcolor); ?>;
     color: <?php echo esc_attr($page_loading_textcolor); ?>;
-}
-.lahb-mobiles-view .lahb-element.lahb-element--placeholder,
-.lahb-mobiles-view .lahb-element.lahb-element--placeholder2 {
-    width: 30px;
-    height: 100%;
 }
 <?php if( jinx_get_option('catalog_mode', 'off') == 'on' && jinx_get_option('catalog_mode_price', 'off') == 'on' ){ ?>
 .woocommerce .product-price,

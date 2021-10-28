@@ -25,58 +25,54 @@
     }
   }
 }
-.lakit--transparency-yes.elementor-section{
-  &.elementor-sticky{
-    &:not(.elementor-sticky--effects){
-      background-color: var(--lakit-section-bg-color) !important;
-      .main-color{
-        .lakit-hamburger-panel__toggle-icon,
-        .lakit-hamburger-panel__toggle-label,
-        .lakit-blocks-icon{
-          color: inherit;
-        }
+.lakit--transparency-yes.elementor-section.elementor-element{
+  &:not(.elementor-sticky--effects){
+    background-color: var(--lakit-section-bg-color) !important;
+    .main-color{
+      color: var(--lakit-section-link-color);
+      .lakit-hamburger-panel__toggle-icon,
+      .lakit-hamburger-panel__toggle-label,
+      .lakit-blocks-icon{
+        color: inherit;
       }
-      .main-color{
-        color: var(--lakit-section-link-color);
-        &:hover{
+      &:hover{
+        color: var(--lakit-section-link-hover-color);
+      }
+    }
+    .elementor-icon{
+      color: var(--lakit-section-link-color) !important;
+      &:hover{
+        color: var(--lakit-section-link-hover-color) !important;
+      }
+    }
+    .elementor-widget-text-editor,
+    .elementor-heading-title{
+      color: var(--lakit-section-text-color);
+    }
+    .elementor-widget-divider{
+      --divider-color: var(--lakit-section-text-color) !important;
+    }
+    .elementor-icon-list-item{
+      color: var(--lakit-section-link-color);
+      .elementor-icon-list-icon svg,
+      .elementor-icon-list-icon i,
+      .elementor-icon-list-text{
+        color: inherit !important;
+        fill: currentColor !important;
+      }
+      &:hover{
+        color: var(--lakit-section-link-hover-color);
+      }
+    }
+    .lakit-nav-wrap{
+      &:not(.lakit-mobile-menu-active){
+        .current-menu-item > .menu-item-link.menu-item-link-depth-0{
           color: var(--lakit-section-link-hover-color);
         }
-      }
-      .elementor-icon{
-        color: var(--lakit-section-link-color) !important;
-        &:hover{
-          color: var(--lakit-section-link-hover-color) !important;
-        }
-      }
-      .elementor-widget-text-editor,
-      .elementor-heading-title{
-        color: var(--lakit-section-text-color);
-      }
-      .elementor-widget-divider{
-        --divider-color: var(--lakit-section-text-color) !important;
-      }
-      .elementor-icon-list-item{
-        color: var(--lakit-section-link-color);
-        .elementor-icon-list-icon svg,
-        .elementor-icon-list-icon i,
-        .elementor-icon-list-text{
-          color: inherit !important;
-          fill: currentColor !important;
-        }
-        &:hover{
-          color: var(--lakit-section-link-hover-color);
-        }
-      }
-      .lakit-nav-wrap{
-        &:not(.lakit-mobile-menu-active){
-          .current-menu-item > .menu-item-link.menu-item-link-depth-0{
+        .menu-item-link.menu-item-link-depth-0{
+          color: var(--lakit-section-link-color);
+          &:hover{
             color: var(--lakit-section-link-hover-color);
-          }
-          .menu-item-link.menu-item-link-depth-0{
-            color: var(--lakit-section-link-color);
-            &:hover{
-              color: var(--lakit-section-link-hover-color);
-            }
           }
         }
       }

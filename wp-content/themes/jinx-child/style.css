@@ -117,10 +117,70 @@ Domain Path:    /languages/
   padding-top: 1px;
 }
 
-.elementor-location-header .lakit--transparency-yes.elementor-section.elementor-sticky:not(.elementor-sticky--effects) {
+.elementor-location-header .lakit--transparency-yes.elementor-section:not(.elementor-sticky--effects) {
   position: absolute !important;
   top: auto !important;
   min-width: 100%;
 }
 
-/*# sourceMappingURL=style.css.map */
+.product_item span.la-custom-badge.badge-hot {
+  left: -10px;
+  right: auto;
+  border-radius: 0;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 0.4em 1em;
+  background-color: #FF7844;
+  line-height: 1.3;
+  text-transform: lowercase;
+}
+
+.product_item span.la-custom-badge.badge-hot:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  border-right: 0.6em solid #D33B00;
+  border-bottom: 0.6em solid transparent;
+  bottom: -0.55em;
+}
+
+.product_item span.la-custom-badge.badge-hot:before {
+  content: "";
+  position: absolute;
+  border-right: 0.6em solid transparent;
+  border-top: 1.05em solid #FF7844;
+  border-bottom: 1.05em solid #FF7844;
+  right: -0.6em;
+  top: 0;
+}
+
+.product_item span.la-custom-badge.onsale {
+  left: -10px;
+  right: auto;
+  border-radius: 0;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 0.4em 1em;
+  background-color: #BCCF48;
+  line-height: 1.3;
+  text-transform: lowercase;
+}
+
+.product_item span.la-custom-badge.onsale:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  border-right: 0.6em solid #90A609;
+  border-bottom: 0.6em solid transparent;
+  bottom: -0.55em;
+}
+
+.product_item span.la-custom-badge.onsale:before {
+  content: "";
+  position: absolute;
+  border-right: 0.6em solid transparent;
+  border-top: 1.05em solid #BCCF48;
+  border-bottom: 1.05em solid #BCCF48;
+  right: -0.6em;
+  top: 0;
+}

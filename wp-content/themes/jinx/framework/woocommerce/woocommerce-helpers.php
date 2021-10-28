@@ -223,6 +223,10 @@ if ( !function_exists('jinx_modify_text_woocommerce_catalog_orderby') ){
 if(!function_exists('jinx_add_custom_badge_for_product')){
     function jinx_add_custom_badge_for_product(){
         global $product;
+        $availability = $product->get_availability();
+        if(!empty($availability['class']) && $availability['class'] == 'out-of-stock' && !empty($availability['availability'])){
+            printf('<span class="la-custom-badge badge-out-of-stock">%s</span>', esc_html($availability['availability']));
+        }
         $product_badges = jinx_get_post_meta($product->get_id(), 'product_badges');
         if(empty($product_badges)){
             return;
@@ -258,7 +262,7 @@ if(!function_exists('jinx_add_custom_badge_for_product')){
             );
         }
     }
-    add_action( 'woocommerce_before_shop_loop_item_title', 'jinx_add_custom_badge_for_product', 9 );
+    add_action( 'woocommerce_before_shop_loop_item_title', 'jinx_add_custom_badge_for_product', -2000 );
     add_action( 'woocommerce_before_single_product_summary', 'jinx_add_custom_badge_for_product', 9 );
 }
 

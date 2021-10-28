@@ -22,8 +22,8 @@ if(!function_exists('jinx_register_required_plugins')){
 
         $initial_required = array(
             'revslider' => array(
-                'source'    => 'https://la-studioweb.com/file-resouces/shared/plugins/revslider_v6.5.8.zip',
-                'version'   => '6.5.8'
+                'source'    => 'https://la-studioweb.com/file-resouces/shared/plugins/revslider_v6.5.9.zip',
+                'version'   => '6.5.9'
             ),
             'jinx-demo-data' => array(
                 'source'    => 'https://la-studioweb.com/file-resouces/jinx/plugins/jinx-demo-data_v1.0.0.zip',
@@ -39,7 +39,7 @@ if(!function_exists('jinx_register_required_plugins')){
             'name' 					=> esc_html_x('Elementor', 'admin-view', 'jinx'),
             'slug' 					=> 'elementor',
             'required' 				=> true,
-            'version'				=> '3.4.4'
+            'version'				=> '3.4.6'
         );
 
         $plugins[] = array(
@@ -53,7 +53,7 @@ if(!function_exists('jinx_register_required_plugins')){
 		$plugins[] = array(
 			'name'     				=> esc_html_x('WooCommerce', 'admin-view', 'jinx'),
 			'slug'     				=> 'woocommerce',
-			'version'				=> '5.7.1',
+			'version'				=> '5.8.0',
 			'required' 				=> false
 		);
         

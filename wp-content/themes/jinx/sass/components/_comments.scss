@@ -173,7 +173,7 @@
 }
 
 .comment-respond .comment-reply-title {
-	margin-bottom: 15px;
+	margin-bottom: 30px;
 	font-size: var(--theme-h1-font-size);
 }
 
@@ -252,7 +252,7 @@ body:not(.logged-in) p.comment-notes{
 	-webkit-appearance: none;
 	padding: 15px 25px;
 	line-height: 2;
-	border-radius: 30px;
+	border-radius: 10px;
 }
 .comment-form .comment-form-cookies-consent{
 	font-size: .875em;
@@ -268,12 +268,17 @@ body:not(.logged-in) p.comment-notes{
 	padding: 20px;
 	vertical-align: top;
 	-webkit-appearance: none;
-	border-radius: 30px;
+	border-radius: 10px;
 }
 .comment-form .submit{
 	min-width: 180px;
-	padding: 20px 30px;
+	padding: 18px 32px;
 	border-radius: 30px;
+	font-size: 1em;
+	background-color: $primary-color;
+	&:hover{
+		background-color: $secondary-color;
+	}
 }
 .comment-form .comment-form-url,
 .comment-form .comment-form-email,

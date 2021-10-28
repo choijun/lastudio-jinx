@@ -60,3 +60,11 @@ add_action('admin_head', function (){
 //        add_filter('show_admin_bar', '__return_false');
 //    }
 //});
+
+
+add_action( 'woocommerce_before_shop_loop_item_title', function (){
+    global $product;
+    if( in_array( $product->get_id(), [ 418, 416 ] ) ){
+        echo '<span class="la-custom-badge badge-hot"><span>hot</span></span>';
+    }
+}, -2000 );
